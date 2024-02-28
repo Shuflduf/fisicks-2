@@ -12,7 +12,6 @@ mesh = SubResource("BoxMesh_icym5")
 [node name="Box" type="Node3D"]
 script = ExtResource("1_k5nu3")
 box = ExtResource("2_q06q4")
-random = 1.0
 
 [node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="."]
 multimesh = SubResource("MultiMesh_026y5")
