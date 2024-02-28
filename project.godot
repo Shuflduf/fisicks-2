@@ -15,6 +15,10 @@ run/main_scene="res://node_3d.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[editor]
+
+movie_writer/movie_file="C:/Users/michael935/OneDrive - Foundations for the Future Charter Academy/Documents/Godot/fisicks-2/athing.avi"
+
 [physics]
 
 3d/physics_engine="JoltPhysics3D"

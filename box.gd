@@ -13,7 +13,8 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(_delta):
 	var new_box = box.instantiate()
-	new_box.position = self.position + Vector3(randf_range(random, -random), randf_range(random, -random), randf_range(random, -random))
+	new_box.position = self.position + Vector3(randf_range\
+	(random, -random), randf_range(random, -random), randf_range(random, -random))
 	box_parent.call_deferred("add_child", new_box)
 	multimesh.multimesh.instance_count += 1
 
