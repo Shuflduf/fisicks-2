@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://53wc6gtq3tts"]
+
+[ext_resource type="Script" path="res://box.gd" id="1_k5nu3"]
+[ext_resource type="PackedScene" uid="uid://b4vkih2v7ovty" path="res://rigid_body_3d.tscn" id="2_q06q4"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_icym5"]
+
+[sub_resource type="MultiMesh" id="MultiMesh_026y5"]
+transform_format = 1
+mesh = SubResource("BoxMesh_icym5")
+
+[node name="Box" type="Node3D"]
+script = ExtResource("1_k5nu3")
+box = ExtResource("2_q06q4")
+random = 1.0
+
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="."]
+multimesh = SubResource("MultiMesh_026y5")
+
+[node name="BoxParent" type="Node3D" parent="."]
